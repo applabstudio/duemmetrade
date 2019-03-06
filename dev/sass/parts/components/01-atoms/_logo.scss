@@ -1,0 +1,47 @@
+$sm-h: rem(44px);
+
+.logo {
+  display: block;
+  padding:20px;
+  width: 100%;
+  max-width: 500px;
+  height:auto;
+  margin:0 auto;
+
+  &--small img{
+    max-height: $sm-h
+  }
+
+  @include when-inside('.site-header') {
+    @include media('>=lg') {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: rem(8px);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity $tt;
+    }
+  }
+
+  @include when-inside('.site-header.scroll') {
+    @include media('>=lg') {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include when-inside('.subheader') {
+    text-align: center;
+    
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  @include when-inside('.site-footer') {
+    img {
+      margin: 0 auto;
+    }
+  }
+}

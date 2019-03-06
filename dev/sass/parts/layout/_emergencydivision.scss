@@ -1,0 +1,180 @@
+.emergencydivision {
+	padding-top:30px;
+	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/images/195.jpg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+
+	.logos img {
+		margin-top: 50px;
+		max-width: 356px;
+		height: auto;
+		background-color: white;
+		border-radius: 4px;
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+		padding-left: 36px;
+		padding-right: 36px;
+		padding-top: 67px;
+		padding-bottom: 66px;
+
+	}
+	.buttontuttodivise {
+		display: flex;
+justify-content: center;
+margin-top:30px;
+	}
+	div {
+		span {
+			position: absolute;
+			color:#d6d4cb;
+			font-family: $title-font-family;
+			font-size: 9rem;
+			margin-top: -20px;
+			text-align: right;
+			margin-left: 330px;
+		}
+		h1 {
+			text-align: right;
+			font-family: $alt-font-family;
+			font-size: 3.4rem;
+			position: relative;
+			font-weight: 600;
+		}
+	}
+	span {
+		font-size: 1.9rem;
+		text-align: right;
+	}
+	h2 {
+		text-align: right;
+		font-family: $alt-font-family;
+		font-style: italic;
+		font-size: 2rem;
+	}
+	p {
+		text-align: right;
+		font-size: 1.6rem;
+		font-style: italic;
+		font-family: 'Ubuntu';
+	}
+	a {
+		text-align: right;
+		text-decoration-line: underline;
+		font-size: 1.6rem;
+		font-family: $raleway-font-family;
+	}
+	.gofontis {
+		display: flex;
+		
+		text-decoration-line: none;
+		button {
+			background-color: #1e6675;
+			border:2px solid #ffffff;
+			color: white;
+			padding:10px;
+			width:217px;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.emergencydivision {
+	div {
+		span {
+			font-size: 3.6em;
+
+width: 100%;
+
+position: relative;
+
+right: 5.6em;
+
+top: 1.3em;
+		}
+	}
+	.logos img {
+		max-width: 290px;
+	}
+}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1058px)  {
+/* Styles */
+.emergencydivisiontitle{
+	font-size: 5em;
+	margin-left: 302px;
+}
+.emergencydivision p {
+	margin-left: 2em;
+	text-align: center;
+}
+}
+
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) {
+// /* Styles */
+// .emergencydivision div span {
+// 	font-size: 4em;
+// 	margin-left: 10em;
+// }
+// }
+
+@media only screen 
+and (min-width : 750px)  {
+/* Styles */
+.emergencydivision div span {
+	font-size: 4em;
+	margin-left: 2.1em;
+}
+.emergencydivision div h1,span {
+	text-align: center;
+	
+}
+.emergencydivision h2 {
+	text-align:center;
+}
+.emergencydivision p {
+	margin-left: 2em;
+	text-align: center;
+}
+
+}
+
+@media only screen 
+and (min-width : 490px) and (max-width : 690px) {
+/* Styles */
+.emergencydivision div span {
+	margin-left: 3em;
+	font-size: 4em;
+}
+}
+
+@media only screen 
+and (min-width : 370px)  {
+/* Styles */
+	.emergencydivision div span {
+		font-size: 7rem;
+	margin-right: 0.5em;
+	}
+}
+
+@media only screen and (min-width : 360px) {
+
+	.emergencydivision div span {
+		font-size: 3.5em;
+		width: 40%;
+		margin-left: 3.1em;
+	}
+
+}

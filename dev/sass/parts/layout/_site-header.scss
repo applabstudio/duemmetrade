@@ -1,0 +1,20 @@
+header {
+  // background: url('../../images/2.jpg');
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-attachment: fixed;
+  // background-size: cover;
+  background-color: white;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  header {
+    // background-image: url('../images/4.jpg') !important;
+    // background-position: center center;
+    // background-attachment: none;
+    // background-size: none;
+  }
+}

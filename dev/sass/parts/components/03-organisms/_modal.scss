@@ -1,0 +1,71 @@
+// $close-fs: rem(68px);
+// $close-pos: rem(16px);
+// $content-p: rem(16px);
+// $content-max-w: (
+//   base: rem(960px),
+//   narrow: rem(520px),
+// );
+// $content-max-h: calc(100vh - 90px);
+// $content-top: rem(64px);
+
+// .modal {
+//   position: fixed;
+//   background: rgba(white, 0.9);
+//   z-index: map-get($zIndex, modal);
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: all $tt;
+//   margin: 0 !important;
+
+//   &.open {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+
+//   &__close {
+//     display: block;
+//     line-height: 0.4;
+//     color: black;
+//     position: absolute;
+//     top: $close-pos;
+//     right: $close-pos;
+//     font-size: $close-fs;
+
+//     @include when-inside('[dir="rtl"]') {
+//       right: auto;
+//       left: $close-pos;
+//     }
+//   }
+
+//   &__content {
+//     padding: $content-p;
+//     width: 90%;
+//     max-width: map-get($content-max-w, base);
+//     max-height: $content-max-h;
+//     overflow: auto;
+//     position: absolute;
+//     top: $content-top;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     background: white;
+//     box-shadow: 0 6px 32px get-color(primary, 1);
+
+//     &--chromeless {
+//       background: none;
+//       box-shadow: none;
+//     }
+
+//     &--narrow {
+//       max-width: map-get($content-max-w, narrow);
+//     }
+
+//     &--v-center {
+//       top: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+// }

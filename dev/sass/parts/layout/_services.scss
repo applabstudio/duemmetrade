@@ -1,0 +1,23 @@
+.services {
+	background-color: #ffffff;
+	padding:10px;
+	h3 {
+		text-align: center;
+		color: #1e6574;
+		font-size: 2rem;
+		font-family: $alt-font-family;
+		font-weight: 600;
+	}
+	p {
+		text-align: center;
+		color: #1e6574;
+		font-size: 1.6rem;
+		font-family: $raleway-font-family;
+	}
+	img {
+		width: 100%;
+		max-width: 101px;
+		height: auto;
+		margin:0 auto;
+	}
+}

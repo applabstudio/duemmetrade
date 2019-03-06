@@ -1,0 +1,82 @@
+.site-footer {
+  margin-bottom: 0;
+  font-family: $alt-font-family;
+  color: #1e6574;
+  border-top:2px dotted rgb(168, 168, 168);
+  border-bottom:2px dotted rgb(168, 168, 168);
+  padding:20px;
+
+a {
+  text-decoration-line: underline;
+  color: #1e6574;
+}
+
+  p {
+    font-style: normal;
+    font-size: 1.6rem;
+  }
+  &__text {
+    text-align: center;
+
+    @include media('>=md') {
+      text-align: left;
+    }
+  }
+
+  &__btns {
+    @include media('>=sm') {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > * + * {
+        margin: 0 0 0 rem(12px);
+      }
+    }
+    
+    @include media('>=md') {
+      flex-direction: column;
+      align-items: flex-end;
+
+      > * + * {
+        margin: rem(12px) 0 0 0;
+      }
+    }
+  }
+
+  &__menus {
+    margin: rem(30px) 0 0;
+
+    @include media('>=lg') {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__colophon { 
+    margin: rem(30px 0);
+    border-top: 1px dashed get-color(bg, 0);
+    border-bottom: 1px dashed get-color(bg, 0);
+    font-size: ms(-1);
+
+    &__wrapper {
+      padding: rem(8px 0);
+      text-align: center;
+
+      @include media('>=md') {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.webit-credits {
+  img {
+    width: 100%;
+    max-width: 13.8rem;
+    height: auto;
+    padding-bottom:0.5rem;
+  }
+}

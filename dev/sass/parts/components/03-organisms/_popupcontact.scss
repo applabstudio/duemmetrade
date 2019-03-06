@@ -1,0 +1,207 @@
+
+.modal-container {
+	display: flex;
+justify-content: center;
+	.button {
+		color: #ffffff;
+		background-color: #e8950c;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+		margin:3rem;
+		width: 140px;
+		font-weight: 100;
+	}
+	h2 {
+		font-family: $alt-font-family;
+		font-style: italic;
+		font-size: 1.6rem;
+		font-weight: 100;
+		margin-top: -35px;
+	}
+
+	input {
+		background-color: #f2f1ee;
+		padding:8px;
+		border-radius: 4px;
+		border:1px solid transparent;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+		margin-left:1.5rem;
+		margin-top:1.5rem;
+	}
+	input:focus {
+		border:1px solid #e8950c;
+	}
+
+	padding-top: 0px;
+	position: relative;
+	width: 160px;    
+	.modal-btn {
+	  display: block;
+	  margin: 0 auto;      
+	  width: 206px;
+	  line-height: 50px;
+height: 48px;
+background-color: #ffa700;
+color: rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+border: 1px solid transparent;
+margin-top: 50px;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+cursor: pointer;
+	  transition: background 0.2s ease-in;
+	  &:hover { background: #ffd359; }
+	}
+	.modal-content, 
+	.modal-backdrop {
+	  height: 0; 
+	  width: 0; 
+	  opacity: 0;    
+	  visibility: hidden;
+	  overflow: hidden; 
+	  cursor: pointer;
+	  transition: opacity 0.2s ease-in; 
+	}
+	.modal-close {
+	  color: #aaa;
+	  position: absolute;
+	  right: 5px;
+	  top: 5px;
+	  padding-top: 3px;
+	  background: #fff;
+	  font-size: 16px;
+	  width: 25px;
+	  height: 25px;
+	  font-weight: bold;
+	  text-align: center;
+	  cursor: pointer;
+	  &:hover { color: #333; }        
+	}      
+	.modal-content-btn {
+	  position: absolute;
+	  text-align: center;
+	  cursor: pointer;
+	  bottom: 20px;
+	  right: 30px;
+	  background: #446CB3;
+	  color: #fff;
+	  width: 50px;
+	  border-radius: 2px;
+	  font-size: 14px;
+	  height: 32px;
+	  padding-top: 9px;
+	  font-weight: normal;
+	  &:hover { color: #fff; background: #365690; }
+	}
+	#modal-toggle {
+	  display: none;  
+	  &.active ~ .modal-backdrop,
+	  &:checked ~ .modal-backdrop {
+		background-color: rgba(0, 0, 0, 0.6);
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 9;
+		visibility: visible;
+		opacity: 1;      
+		transition: opacity 0.2s ease-in; 
+	  }
+	  &.active ~ .modal-content,
+	  &:checked ~ .modal-content {
+		opacity: 1;
+		background-color: #fff;
+		max-width: 700px;
+		width: 600px;
+		height: auto;
+		position: fixed;
+		top: 12%;
+		border-radius: 4px;
+		z-index: 9999;
+		pointer-events: auto;
+		cursor: auto;
+		visibility: visible;      
+		box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);  
+		@media (max-width: 400px) { position: fixed;
+		top: 12%;}                   
+	  }  
+	}
+
+	textarea {
+		width: 46rem;
+		margin-left: 18px;
+		margin-top: 1.5rem;
+		background-color: #f2f1ee;
+		padding:8px;
+		border-radius: 4px;
+		border:1px solid transparent;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+	}
+  }
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+.modal-container {
+	width: 60em;
+}
+.modal-container .modal-btn {
+	margin:0 auto;
+	position:relative;
+	top:1em;
+	left:0.4em;
+}
+.modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+	position:fixed;
+	top: 10em;
+	left:12em;
+	max-width: 20em;
+	textarea {
+		max-width: 12em;
+	}
+}
+}
+
+@media only screen and (min-device-width : 786px) and (max-device-width : 990px) {
+	.modal-container .modal-btn {
+		margin-left:16em;
+	}
+  }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 325) {
+/* Styles */
+.modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+	max-width: 23em;
+
+	input {
+		width:19em;
+	}
+	textarea {
+		margin-left:1em;
+		width: 19em;
+	}
+}
+}
+
+.modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+	max-width: 20.5em;
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+.modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+    max-width: 26.5em;
+}
+}

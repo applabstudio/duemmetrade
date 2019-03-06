@@ -1,0 +1,116 @@
+.medicaldivision {
+	text-align: left;
+	padding-top:30px;
+	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/images/373300-PBC7D5-98.jpg');
+
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+
+.logos img{
+	margin-top: 5rem;
+	max-width: 340px;
+	height: auto;
+	background-color: white;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	padding-left: 4.4rem;
+	padding-right: 4.4rem;
+	padding-top: 5.6rem; 
+	padding-bottom: 55px;
+}
+.buttontuttodivise {
+	display: flex;
+justify-content: center;
+margin-top:33px;
+}
+
+	div {
+		span {
+			position: absolute;
+			color:#d6d4cb;
+			font-family: $title-font-family;
+			font-size: 9rem;
+			margin-top: -20px;
+		}
+		h1 {
+			font-family: $alt-font-family;
+			font-size: 3.4rem;
+			position: relative;
+			font-weight: 600;
+		}
+	}
+
+	span {
+		font-size: 1.9rem;
+	}
+
+	h2 {
+		font-family: $alt-font-family;
+		font-style: italic;
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.6rem;
+		font-style: italic;
+		font-family: 'Ubuntu';
+		// width: 65%;
+	}
+	a {
+		text-decoration-line: underline;
+		font-size: 1.6rem;
+		font-family: $raleway-font-family;
+		padding-bottom: 2em;
+	}
+	.gofontis {
+		display: flex;
+		justify-content: center;
+		text-decoration-line: none;
+		button {
+			background-color: #1e6675;
+			border:1px solid #ffffff;
+			color: white;
+			padding:10px;
+			width:217px;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+		}
+	}
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.medicaldivision {
+	div {
+		span {
+			font-size: 8rem;
+		}
+	}
+	.logos img {
+		max-width: 290px;
+	}
+}
+
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	.medicaldivision {
+		div {
+			span {
+				left:3.7em;
+				font-size: 3.5em;
+			}
+		}
+	}
+}

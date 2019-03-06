@@ -1,0 +1,131 @@
+
+  /* start of our services section */
+  
+  #our-services {
+    background: #f6f6f6;
+    min-height: 100vh;
+    padding-top: 25vh;
+  }
+  
+  #our-services h1 {
+    font-size:50px;
+  }
+  
+  /* OUR SEERVICES LEFT SIDE */
+  
+  #our-services .desc {
+    width: 33%;
+    float: left;
+  }
+  
+  #our-services .desc .heading h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  #our-services .desc .text {
+    color: #BABABA;
+  }
+  
+  /* OUR SERVICES RIGHT SIDE */
+  
+  #our-services .services {
+    width: 100%;
+  }
+  
+  #column-1 {
+    margin-right: 60px;
+  }
+  
+  .column2{
+    margin-left:60px;
+   
+  }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+#column-2 {
+  display: flex;
+}
+#column-1 {
+  display: flex;
+}
+
+}
+
+
+  #our-services .services .column {
+    float: left;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  #our-services .services .column .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    transition: all 0.1s ease;
+    margin-bottom: 7px;
+  }
+  
+  #our-services .services .column .service:hover {
+    background: #28282e;
+    color: #fff;
+  }
+  
+  #our-services .services .column .service:hover .service-icon {
+    color: #fff;
+  }
+  
+  #our-services .services .column .service .service-desc {
+    transform: rotate(-45deg);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  #our-services .services .column .service .service-desc .service-icon  {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f57469;
+  }
+  
+  /* end of our services section */
+  
+  /* media query */
+  
+  @media all and (max-width: 967px) {
+    #our-services {
+        padding-top: 60px;
+    }
+    
+    #our-services .desc {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+    }
+    
+    #our-services .services {
+        width: 100%;
+    }
+    
+    #our-services .services .column {
+        transform: rotate(0deg);
+        margin-right: 10px;
+    }
+    
+    #our-services .services .column .service .service-desc {
+        transform: rotate(0deg);
+    }
+  }
+  #main {
+    display: flex;
+    flex: 2;
+  }
