@@ -150,8 +150,11 @@ cursor: pointer;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-.modal-container {
-	// width: 60em;
+input[placeholder] {
+	text-align: center;
+}
+textarea[placeholder] {
+	text-align: center;
 }
 .modal-container .modal-btn {
 	margin:0 auto;
@@ -170,11 +173,6 @@ and (max-device-width : 1024px) {
 }
 }
 
-@media only screen and (min-device-width : 786px) and (max-device-width : 990px) {
-	.modal-container .modal-btn {
-		// margin-left:16em;
-	}
-  }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -211,3 +209,30 @@ and (min-width : 1224px) {
 	display: flex;
 	justify-content: center;
 }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.modal-container 	textarea {
+	margin-left:1em;
+	width: 11em;
+}
+}
+
+@media only screen 
+and (min-device-width : 482px) and (max-device-width : 768px) {
+	.modal-container 	textarea {
+	width: 11em;
+	}
+}
+ 
+@media only screen 
+and (min-device-width : 1028px) and (max-device-width : 1220px) {
+	.modal-container 	textarea {
+		width: 11em;
+		}
+}
+

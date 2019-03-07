@@ -7,7 +7,7 @@ import formcontrol from './modules/formcontrol';
 siteHeader.init();
 allclick.init();
 modal.init();
-// formcontrol.init();
+formcontrol.init();
 
 // dynamic imports - swipers
 if (document.querySelectorAll('[data-swiper]').length > 0) {

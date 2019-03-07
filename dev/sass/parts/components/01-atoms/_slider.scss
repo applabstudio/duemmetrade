@@ -1,5 +1,8 @@
 /* SLIDER */
 .slider {
+	label {
+		font-size: 2rem;
+	}
 	position: relative;
 	max-width: 100%;
 	overflow-x: hidden;
@@ -205,4 +208,17 @@ margin-top: 120px;
     margin: 5px;
     text-align: center;     /* will center text in <p>, which is not a flex item */
 }
-  
+	
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.slider {
+span {
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+}
+}
+}

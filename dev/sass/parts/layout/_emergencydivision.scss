@@ -1,4 +1,11 @@
 .emergencydivision {
+	.loremipsum {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
 	padding-top:30px;
 	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/images/195.jpg');
 	background-position: center; /* Center the image */
@@ -12,7 +19,6 @@
 	}
 
 	.logos img {
-		margin-top: 50px;
 		max-width: 356px;
 		height: auto;
 		background-color: white;
@@ -27,8 +33,10 @@
 	}
 	.buttontuttodivise {
 		display: flex;
-justify-content: center;
-margin-top:30px;
+		justify-content: center;
+		margin-top:30px;
+		margin-bottom: 20px;
+		text-align: center;
 	}
 	div {
 		span {
@@ -47,12 +55,8 @@ margin-top:30px;
 			font-weight: 600;
 		}
 	}
-	span {
-		font-size: 1.9rem;
-		text-align: center;
-	}
-	h2 {
 	
+	h2 {
 		font-family: $alt-font-family;
 		font-style: italic;
 		font-size: 2rem;
@@ -60,7 +64,7 @@ margin-top:30px;
 	}
 	p {
 		// text-align: right;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-style: italic;
 		font-family: 'Ubuntu';
 		text-align: center;
@@ -68,7 +72,7 @@ margin-top:30px;
 	a {
 		text-align: right;
 		text-decoration-line: underline;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-family: $raleway-font-family;
 	}
 	.gofontis {
@@ -80,7 +84,8 @@ margin-top:30px;
 			border:2px solid #ffffff;
 			color: white;
 			padding:10px;
-			width:217px;
+			width: 43.9rem;
+			max-width: 340px;
 			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 			cursor: pointer;
 		}
@@ -100,14 +105,7 @@ and (max-device-width : 743px) {
 	div {
 		span {
 			font-size: 3.6em;
-
-width: 100%;
-
-position: relative;
-
-right: 0.9em;
-
-top: 1.3em;
+			top: 1.3em;
 		}
 	}
 	.logos img {
@@ -118,59 +116,26 @@ top: 1.3em;
 
 
 
-.loremipsum {
-	display: flex;
-	justify-content: center;
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	.emergencydivision div span {
+		width: 100%;
+	}
 }
 
-// /* Desktops and laptops ----------- */
-// @media only screen 
-// and (min-width : 1058px)  {
-// /* Styles */
-// .emergencydivisiontitle{
-// 	font-size: 5em;
-// 	margin-left: 302px;
-// }
-// .emergencydivision p {
-// 	margin-left: 2em;
-// 	text-align: center;
-// }
-// }
-
-// @media only screen 
-// and (min-width : 750px)  {
-// /* Styles */
-// .emergencydivision div span {
-// 	font-size: 4em;
-// 	margin-left: 2.1em;
-// }
-// .emergencydivision div h1,span {
-// 	text-align: center;
-	
-// }
-// .emergencydivision h2 {
-// 	text-align:center;
-// }
-// .emergencydivision p {
-// 	margin-left: 2em;
-// 	text-align: center;
-// }
-
-// }
-
-// @media only screen 
-// and (min-width : 490px) and (max-width : 720px) {
-// /* Styles */
-// .emergencydivision div span {
-// 	margin-left: 0.9em;
-// 	font-size: 4em;
-// }
-// }
-
-// @media only screen 
-// and (min-width : 564px) and (max-width : 724px) {
-// 	.emergencydivision div span {
-// 		margin-left: 2.4em;
-// 		font-size: 4em;
-// 	}
-// }
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.emergencydivision div span {
+	position: absolute;
+	right: 1.5em; 
+}
+}

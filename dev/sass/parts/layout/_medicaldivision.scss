@@ -1,11 +1,16 @@
 .medicaldivision {
-	text-align: left;
+	text-align: center;
 	padding-top:30px;
 	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/images/373300-PBC7D5-98.jpg');
-
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
+
+	.loremipsum {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.logos {
 		display: flex;
@@ -49,9 +54,6 @@ margin-top:33px;
 		}
 	}
 
-	span {
-		font-size: 1.9rem;
-	}
 
 	h2 {
 		font-family: $alt-font-family;
@@ -60,7 +62,7 @@ margin-top:33px;
 		text-align: center;
 	}
 	p {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-style: italic;
 		font-family: 'Ubuntu';
 		// width: 65%;
@@ -68,9 +70,9 @@ margin-top:33px;
 	}
 	a {
 		text-decoration-line: underline;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		font-family: $raleway-font-family;
-		padding-bottom: 2em;
+		padding-bottom: 1em;
 		text-align: center;
 	}
 	.gofontis {
@@ -82,7 +84,8 @@ margin-top:33px;
 			border:1px solid #ffffff;
 			color: white;
 			padding:10px;
-			width:217px;
+			width: 41.8rem;
+			max-width: 340px;
 			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 			cursor: pointer;
 		}
@@ -102,14 +105,33 @@ and (max-device-width : 480px) {
 		}
 	}
 	.logos img {
-		max-width: 290px;
+		height:auto;
 	}
 }
 
 }
 
 
-.loremipsum {
-	display: flex;
-	justify-content: center;
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	.medicaldivision div span {
+		width: 100%;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.medicaldivision div span {
+	position: absolute;
+	right: 1.5em; 
+}
 }
