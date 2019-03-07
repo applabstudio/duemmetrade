@@ -9,7 +9,8 @@
 	.loremipsum {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
+		opacity: 0.5;
 	}
 
 	.logos {
@@ -50,7 +51,7 @@ margin-top:33px;
 			font-size: 3.4rem;
 			position: relative;
 			font-weight: 600;
-			text-align: center;
+			text-align: left;
 		}
 	}
 
@@ -59,21 +60,21 @@ margin-top:33px;
 		font-family: $alt-font-family;
 		font-style: italic;
 		font-size: 2rem;
-		text-align: center;
+		text-align: left;
 	}
 	p {
 		font-size: 1.8rem;
 		font-style: italic;
 		font-family: 'Ubuntu';
 		// width: 65%;
-		text-align: center;
+		text-align: left;
 	}
 	a {
 		text-decoration-line: underline;
 		font-size: 1.8rem;
 		font-family: $raleway-font-family;
 		padding-bottom: 1em;
-		text-align: center;
+		text-align: left;
 	}
 	.gofontis {
 		display: flex;
@@ -124,14 +125,35 @@ and (max-device-width : 1024px) {
 	}
 }
 
-/* iPads (landscape) ----------- */
+// /* iPads (landscape) ----------- */
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : landscape) {
+// /* Styles */
+// .medicaldivision div span {
+// 	position: absolute;
+// 	right: 1.5em; 
+// }
+// }
+
+/* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
+and (min-device-width : 320px)  and (max-device-width : 980px){
 /* Styles */
-.medicaldivision div span {
-	position: absolute;
-	right: 1.5em; 
+.loremipsum {
+	align-items: center;
 }
+	.medicaldivision p{
+		text-align: center;
+	}
+	.medicaldivision div h1{
+		text-align: center;
+	}
+	.medicaldivision div h2{
+		text-align: center;
+	}
+	.medicaldivision div a{
+		text-align: center;
+	}
 }

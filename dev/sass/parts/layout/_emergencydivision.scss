@@ -2,8 +2,9 @@
 	.loremipsum {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
 		width: 100%;
+		opacity: 0.5;
 	}
 
 	padding-top:30px;
@@ -16,6 +17,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 4rem;
 	}
 
 	.logos img {
@@ -48,7 +50,7 @@
 			text-align: center;
 		}
 		h1 {
-			text-align: center;
+			text-align: left;
 			font-family: $alt-font-family;
 			font-size: 3.4rem;
 			position: relative;
@@ -60,14 +62,14 @@
 		font-family: $alt-font-family;
 		font-style: italic;
 		font-size: 2rem;
-		text-align: center;
+		text-align: left;
 	}
 	p {
 		// text-align: right;
 		font-size: 1.8rem;
 		font-style: italic;
 		font-family: 'Ubuntu';
-		text-align: center;
+		text-align: left;
 	}
 	a {
 		text-align: right;
@@ -97,6 +99,9 @@
 and (min-device-width : 320px) 
 and (max-device-width : 743px) {
 /* Styles */
+.loremipsum {
+	align-items: center;
+}
 .emergencydivision h1, h2 {
 	text-align: center;
 }
@@ -128,14 +133,33 @@ and (max-device-width : 1024px) {
 	}
 }
 
-/* iPads (landscape) ----------- */
+// /* iPads (landscape) ----------- */
+// @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) 
+// and (orientation : landscape) {
+// /* Styles */
+// .emergencydivision div span {
+// 	position: absolute;
+// 	right: 1.5em; 
+// }
+// }
+
+
+/* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
+and (min-device-width : 320px)  and (max-device-width : 980px){
 /* Styles */
-.emergencydivision div span {
-	position: absolute;
-	right: 1.5em; 
+.loremipsum {
+	align-items: center;
 }
+	.emergencydivision p{
+		text-align: center;
+	}
+	.emergencydivision div h1{
+		text-align: center;
+	}
+	.emergencydivision div h2{
+		text-align: center;
+	}
 }
