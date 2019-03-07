@@ -222,3 +222,13 @@ span {
 }
 }
 }
+
+@media only screen 
+and (min-device-width : 320px) and (min-device-height : 568px) {
+	.slider .slider__slide--3__containerspan {
+    margin-top: 5em;
+}
+	.subheader .subheader__welcome h2 {
+		font-size: 11rem;
+	}
+} 

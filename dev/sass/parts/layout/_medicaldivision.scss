@@ -125,17 +125,17 @@ and (max-device-width : 1024px) {
 	}
 }
 
-// /* iPads (landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : landscape) {
-// /* Styles */
-// .medicaldivision div span {
-// 	position: absolute;
-// 	right: 1.5em; 
-// }
-// }
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.medicaldivision div span {
+	position: absolute;
+	right: 3.5em;	
+}
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -155,5 +155,16 @@ and (min-device-width : 320px)  and (max-device-width : 980px){
 	}
 	.medicaldivision div a{
 		text-align: center;
+	}
+}
+
+// iphone5
+@media only screen 
+and (min-device-width : 320px) and (min-device-height : 568px) {
+	.medicaldivision .logos img {
+		max-width: 280px;
+	}
+	.medicaldivision .gofontis button {
+		max-width: 280px;
 	}
 }

@@ -38,6 +38,9 @@
 			margin-top:1.5rem;
 			width: 30rem;
 		}	
+		input[type="email"]:focus {
+			border:1px solid #e8950c;
+		}
 		input[type="submit"] {
 			width: 246px;
 			margin-left:16px;

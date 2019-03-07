@@ -133,17 +133,18 @@ and (max-device-width : 1024px) {
 	}
 }
 
-// /* iPads (landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : landscape) {
-// /* Styles */
-// .emergencydivision div span {
-// 	position: absolute;
-// 	right: 1.5em; 
-// }
-// }
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.emergencydivision div span {
+	position: absolute;
+	right: 3.5em;
+	
+}
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -161,5 +162,20 @@ and (min-device-width : 320px)  and (max-device-width : 980px){
 	}
 	.emergencydivision div h2{
 		text-align: center;
+	}
+}
+
+// iphone 5 
+@media only screen 
+and (min-device-width : 320px) and (min-device-height : 568px) {
+
+	.emergencydivision div span {
+		font-size: 8rem;
+	}
+	.emergencydivision .logos img {
+		max-width: 280px;
+	}
+	.emergencydivision .gofontis button {
+		max-width: 280px;
 	}
 }
