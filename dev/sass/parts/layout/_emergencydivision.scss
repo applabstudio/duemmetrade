@@ -5,6 +5,12 @@
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 
+	.logos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.logos img {
 		margin-top: 50px;
 		max-width: 356px;
@@ -31,11 +37,10 @@ margin-top:30px;
 			font-family: $title-font-family;
 			font-size: 9rem;
 			margin-top: -20px;
-			text-align: right;
-			margin-left: 330px;
+			text-align: center;
 		}
 		h1 {
-			text-align: right;
+			text-align: center;
 			font-family: $alt-font-family;
 			font-size: 3.4rem;
 			position: relative;
@@ -44,19 +49,21 @@ margin-top:30px;
 	}
 	span {
 		font-size: 1.9rem;
-		text-align: right;
+		text-align: center;
 	}
 	h2 {
-		text-align: right;
+	
 		font-family: $alt-font-family;
 		font-style: italic;
 		font-size: 2rem;
+		text-align: center;
 	}
 	p {
-		text-align: right;
+		// text-align: right;
 		font-size: 1.6rem;
 		font-style: italic;
 		font-family: 'Ubuntu';
+		text-align: center;
 	}
 	a {
 		text-align: right;
@@ -83,9 +90,13 @@ margin-top:30px;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (max-device-width : 743px) {
 /* Styles */
-.emergencydivision {
+.emergencydivision h1, h2 {
+	text-align: center;
+}
+.emergencydivision p{
+	text-align: center;
 	div {
 		span {
 			font-size: 3.6em;
@@ -94,7 +105,7 @@ width: 100%;
 
 position: relative;
 
-right: 5.6em;
+right: 0.9em;
 
 top: 1.3em;
 		}
@@ -103,78 +114,63 @@ top: 1.3em;
 		max-width: 290px;
 	}
 }
-
 }
 
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1058px)  {
-/* Styles */
-.emergencydivisiontitle{
-	font-size: 5em;
-	margin-left: 302px;
+
+
+.loremipsum {
+	display: flex;
+	justify-content: center;
 }
-.emergencydivision p {
-	margin-left: 2em;
-	text-align: center;
-}
-}
+
+// /* Desktops and laptops ----------- */
+// @media only screen 
+// and (min-width : 1058px)  {
+// /* Styles */
+// .emergencydivisiontitle{
+// 	font-size: 5em;
+// 	margin-left: 302px;
+// }
+// .emergencydivision p {
+// 	margin-left: 2em;
+// 	text-align: center;
+// }
+// }
 
 // @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) {
+// and (min-width : 750px)  {
 // /* Styles */
 // .emergencydivision div span {
 // 	font-size: 4em;
-// 	margin-left: 10em;
+// 	margin-left: 2.1em;
 // }
-// }
-
-@media only screen 
-and (min-width : 750px)  {
-/* Styles */
-.emergencydivision div span {
-	font-size: 4em;
-	margin-left: 2.1em;
-}
-.emergencydivision div h1,span {
-	text-align: center;
+// .emergencydivision div h1,span {
+// 	text-align: center;
 	
-}
-.emergencydivision h2 {
-	text-align:center;
-}
-.emergencydivision p {
-	margin-left: 2em;
-	text-align: center;
-}
+// }
+// .emergencydivision h2 {
+// 	text-align:center;
+// }
+// .emergencydivision p {
+// 	margin-left: 2em;
+// 	text-align: center;
+// }
 
-}
+// }
 
-@media only screen 
-and (min-width : 490px) and (max-width : 690px) {
-/* Styles */
-.emergencydivision div span {
-	margin-left: 3em;
-	font-size: 4em;
-}
-}
+// @media only screen 
+// and (min-width : 490px) and (max-width : 720px) {
+// /* Styles */
+// .emergencydivision div span {
+// 	margin-left: 0.9em;
+// 	font-size: 4em;
+// }
+// }
 
-@media only screen 
-and (min-width : 370px)  {
-/* Styles */
-	.emergencydivision div span {
-		font-size: 7rem;
-	margin-right: 0.5em;
-	}
-}
-
-@media only screen and (min-width : 360px) {
-
-	.emergencydivision div span {
-		font-size: 3.5em;
-		width: 40%;
-		margin-left: 3.1em;
-	}
-
-}
+// @media only screen 
+// and (min-width : 564px) and (max-width : 724px) {
+// 	.emergencydivision div span {
+// 		margin-left: 2.4em;
+// 		font-size: 4em;
+// 	}
+// }

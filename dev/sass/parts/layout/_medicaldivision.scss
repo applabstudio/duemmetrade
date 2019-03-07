@@ -7,6 +7,12 @@
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 
+	.logos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 .logos img{
 	margin-top: 5rem;
 	max-width: 340px;
@@ -39,6 +45,7 @@ margin-top:33px;
 			font-size: 3.4rem;
 			position: relative;
 			font-weight: 600;
+			text-align: center;
 		}
 	}
 
@@ -50,18 +57,21 @@ margin-top:33px;
 		font-family: $alt-font-family;
 		font-style: italic;
 		font-size: 2rem;
+		text-align: center;
 	}
 	p {
 		font-size: 1.6rem;
 		font-style: italic;
 		font-family: 'Ubuntu';
 		// width: 65%;
+		text-align: center;
 	}
 	a {
 		text-decoration-line: underline;
 		font-size: 1.6rem;
 		font-family: $raleway-font-family;
 		padding-bottom: 2em;
+		text-align: center;
 	}
 	.gofontis {
 		display: flex;
@@ -99,18 +109,7 @@ and (max-device-width : 480px) {
 }
 
 
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-	.medicaldivision {
-		div {
-			span {
-				left:3.7em;
-				font-size: 3.5em;
-			}
-		}
-	}
+.loremipsum {
+	display: flex;
+	justify-content: center;
 }
